@@ -1,0 +1,35 @@
+{
+  "name": "order-risk-agent",
+  "version": "0.1.0",
+  "description": "Scores e-commerce orders for fraud and deliverability risk with deterministic rules, uses an LLM only to explain the result, and routes anything uncertain to a human review queue.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Krunal Patel",
+  "main": "dist/src/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "demo": "node --experimental-strip-types src/demo.ts",
+    "test": "tsc --noEmit && node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "fraud-detection",
+    "risk-scoring",
+    "human-in-the-loop",
+    "ai-agents",
+    "ecommerce",
+    "shopify"
+  ],
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
